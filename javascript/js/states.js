@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var filter = this.value.toLocaleLowerCase();
        // console.log(filter);
         var filteredStates = usaStates.filter(function(state) {
+            console.log(state.name);
             return state.name.toLowerCase().indexOf(filter) >= 0;
 
         });
